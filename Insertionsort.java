@@ -14,21 +14,16 @@ public class First {
                 j--;
             }
             arr[j+1]=key;
-        }
-
+      }
     }
-
     public static void main(String[] args)
     {
         int[] arr = {25,67,89,34,10,23,12};
         insertionsort(arr);
-        for (int j : arr) {
+        for (int j : arr) 
+        {
             System.out.print(j + " ");
         }
-
-
-
     }
 
-
-    }
+ }
