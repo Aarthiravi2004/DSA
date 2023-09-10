@@ -9,7 +9,7 @@ public class First {
         int r=(arr.length-1);
         while(l<r)
         {
-            int mid=(l+r)/2;
+            int mid=(l+r)/2;  // also you can do as mid=(l+(r-l)/2 to het the mid answer into the range of int
             if(arr[mid]==x)
             {
                 return mid;
