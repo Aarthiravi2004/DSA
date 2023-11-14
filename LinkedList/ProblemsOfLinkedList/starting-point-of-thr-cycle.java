@@ -41,14 +41,7 @@ public class Solution {
 
     public static int lengthOfCycle(ListNode head)
     {
-        ListNode fast = head;
         ListNode slow = head;
-        while(fast != null && fast.next != null)
-        {
-            slow = slow.next;
-            fast = fast.next.next;
-            if(slow == fast)
-            {
                 ListNode temp = slow;
                 int length = 0;
                 do{
@@ -56,9 +49,6 @@ public class Solution {
                     temp = temp.next;
                 }while(temp != slow);
                 return length;
-            }
-        }
-        return 0;
     }
 }
 
